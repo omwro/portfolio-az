@@ -1,5 +1,12 @@
 <template>
-
+    <header>
+        <div>
+            LOGO
+        </div>
+        <div>
+            MENU
+        </div>
+    </header>
 </template>
 
 <script>
