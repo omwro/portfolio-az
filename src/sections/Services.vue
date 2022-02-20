@@ -42,7 +42,7 @@ export default {
 
     h2 {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: bold;
         color: $primary;
     }
 

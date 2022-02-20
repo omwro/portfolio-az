@@ -1,5 +1,7 @@
 <template>
-    <h1 class="gradient">Skills</h1>
+    <section id="skills">
+        <h1 class="gradient">Skills</h1>
+    </section>
 </template>
 
 <script>

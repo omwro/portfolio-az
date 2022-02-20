@@ -38,11 +38,15 @@ export default {
 <style lang="scss">
 @import "src/main";
 
-.paragraph {
+#home .paragraph {
     font-size: 32px;
 
-    .vue-typer .custom.caret {
-        background-color: $primary !important;
+    .vue-typer {
+        white-space: pre;
+
+        .custom.caret {
+            background-color: $primary !important;
+        }
     }
 }
 </style>

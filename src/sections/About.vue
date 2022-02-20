@@ -1,5 +1,7 @@
 <template>
-    <h1 class="gradient">About</h1>
+    <section id="about">
+        <h1 class="gradient">About</h1>
+    </section>
 </template>
 
 <script>
