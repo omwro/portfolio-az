@@ -1,5 +1,5 @@
 <template>
-    <section id="services">
+    <section id="services" class="max-width">
         <h1 class="gradient">Services</h1>
         <div class="container">
             <div class="block">

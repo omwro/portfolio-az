@@ -1,5 +1,5 @@
 <template>
-    <section id="home">
+    <section id="home" class="max-width">
         <Selfie/>
         <Typer/>
     </section>

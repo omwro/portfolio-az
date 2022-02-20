@@ -1,5 +1,5 @@
 <template>
-    <section id="skills">
+    <section id="skills" class="max-width">
         <h1 class="gradient">Skills</h1>
         <div class="container">
             <Progress name="Python" progress="100"/>

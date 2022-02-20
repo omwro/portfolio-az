@@ -1,6 +1,6 @@
 $background: #111215;
-$container: rgba(255, 255, 255, 0.02);
-$block: rgba(255, 255, 255, 0.06);
+$container: #141518;
+$block: #1F2023;
 $primary: rgba(255, 255, 255, 0.9);
 $secondary: rgba(255, 255, 255, 0.6);
 $gradient: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
@@ -23,5 +23,10 @@ section {
   display: flex;
   flex-direction: column;
   padding: 96px 16px 32px;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 

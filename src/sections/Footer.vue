@@ -1,7 +1,9 @@
 <template>
     <footer>
-        <small>&copy; 2022 ALEX ZAMFIR ALL RIGHTS RESERVED</small>
-        <small>Made by <a href="https://omererdem.nl" class="gradient" target="_blank" rel="noopener noreferrer">Ömer Erdem</a></small>
+        <div class="container max-width">
+            <small>&copy; 2022 ALEX ZAMFIR ALL RIGHTS RESERVED</small>
+            <small>Made by <a href="https://omererdem.nl" class="gradient" target="_blank" rel="noopener noreferrer">Ömer Erdem</a></small>
+        </div>
     </footer>
 </template>
 
@@ -17,12 +19,16 @@ export default {
 footer {
     background: $container;
     padding: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     small {
         color: $secondary;
+        font-size: 12px;
 
         a {
             text-decoration: none;

@@ -1,5 +1,5 @@
 <template>
-    <section id="about">
+    <section id="about" class="max-width">
         <h1 class="gradient">About</h1>
     </section>
 </template>
