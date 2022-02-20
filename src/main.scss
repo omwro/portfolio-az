@@ -1,5 +1,27 @@
 $background: #111215;
-$container: rgba(255, 255, 255, 0.01);
+$container: rgba(255, 255, 255, 0.02);
+$block: rgba(255, 255, 255, 0.06);
 $primary: white;
 $secondary: #a4a7b1;
 $gradient: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+$gradient-reverse: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+
+h1 {
+  margin: 0 auto 64px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.gradient {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: max-content;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 16px 32px;
+}
+

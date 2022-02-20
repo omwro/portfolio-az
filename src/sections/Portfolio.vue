@@ -1,5 +1,5 @@
 <template>
-    <h1>Portfolio</h1>
+    <h1 class="gradient">Portfolio</h1>
 </template>
 
 <script>

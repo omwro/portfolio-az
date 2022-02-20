@@ -1,5 +1,5 @@
 <template>
-    <h1>Skills</h1>
+    <h1 class="gradient">Skills</h1>
 </template>
 
 <script>
