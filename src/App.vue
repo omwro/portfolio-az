@@ -10,6 +10,8 @@
         <Portfolio/>
         <Seperator side="right"/>
         <Skills/>
+        <Seperator side="left"/>
+        <Contact/>
         <Footer/>
     </div>
 </template>
@@ -24,10 +26,12 @@ import Portfolio from "@/sections/Portfolio";
 import Skills from "@/sections/Skills";
 import Footer from "@/sections/Footer";
 import Seperator from "@/components/Seperator";
+import Contact from "@/sections/Contact";
 
 export default {
     name: 'App',
     components: {
+        Contact,
         Seperator,
         Footer,
         Skills,
