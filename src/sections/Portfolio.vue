@@ -1,45 +1,13 @@
 <template>
     <section id="portfolio" class="max-width">
-        <h1 class="gradient">Portfolio</h1>
+        <h1 class="gradient">{{ data.title }}</h1>
         <div class="container">
-            <div class="block">
-                <h2>Necklace</h2>
-                <p>Necklace prototype magnet</p>
-                <img src="@/../public/img/projects/project4.png"/>
+            <div class="block" v-for="(p,i) in data.projects" :key="i">
+                <h2>{{ p.title }}</h2>
+                <p>{{ p.description }}</p>
+                <img :src="p.image_path" alt="project picture"/>
                 <div class="tags-container">
-                    <div class="tag">Necklace</div>
-                    <div class="tag">Prototype</div>
-                    <div class="tag">Magnet</div>
-                </div>
-            </div>
-            <div class="block">
-                <h2>Necklace</h2>
-                <p>Necklace prototype magnet</p>
-                <img src="@/../public/img/projects/project4.png"/>
-                <div class="tags-container">
-                    <div class="tag">Necklace</div>
-                    <div class="tag">Prototype</div>
-                    <div class="tag">Magnet</div>
-                </div>
-            </div>
-            <div class="block">
-                <h2>Necklace</h2>
-                <p>Necklace prototype magnet</p>
-                <img src="@/../public/img/projects/project4.png"/>
-                <div class="tags-container">
-                    <div class="tag">Necklace</div>
-                    <div class="tag">Prototype</div>
-                    <div class="tag">Magnet</div>
-                </div>
-            </div>
-            <div class="block">
-                <h2>Necklace</h2>
-                <p>Necklace prototype magnet</p>
-                <img src="@/../public/img/projects/project4.png"/>
-                <div class="tags-container">
-                    <div class="tag">Necklace</div>
-                    <div class="tag">Prototype</div>
-                    <div class="tag">Magnet</div>
+                    <div class="tag" v-for="(t,j) in p.tags" :key="j">{{ t }}</div>
                 </div>
             </div>
         </div>
@@ -47,8 +15,13 @@
 </template>
 
 <script>
+import content from "../../public/data/content.json"
+
 export default {
-    name: "Portfolio"
+    name: "Portfolio",
+    data: () => ({
+        data: content.portfolio
+    })
 }
 </script>
 

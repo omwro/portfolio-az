@@ -2,23 +2,25 @@
     <header>
         <nav class="max-width">
             <div>
-                <h1 class="gradient">AZ</h1>
+                <h1 class="gradient">{{data.logo}}</h1>
             </div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li v-for="(m, i) in data.menu" :key="i">
+                    <a :href="m.id">{{m.name}}</a>
+                </li>
             </ul>
         </nav>
     </header>
 </template>
 
 <script>
+import content from "../../public/data/content.json"
+
 export default {
-    name: "Navbar"
+    name: "Navbar",
+    data: () => ({
+        data: content.navbar
+    })
 }
 </script>
 

@@ -1,21 +1,22 @@
 <template>
     <section id="skills" class="max-width">
-        <h1 class="gradient">Skills</h1>
+        <h1 class="gradient">{{ data.title }}</h1>
         <div class="container">
-            <Progress name="Python" progress="100"/>
-            <Progress name="Python" progress="80"/>
-            <Progress name="Python" progress="60"/>
-            <Progress name="Python" progress="40"/>
-            <Progress name="Python" progress="20"/>
+            <Progress v-for="(p, i) in data.progress" :name="p.name" :progress="p.score" :key="i"/>
         </div>
     </section>
 </template>
 
 <script>
+import content from "../../public/data/content.json"
 import Progress from "@/components/Progress";
+
 export default {
     name: "Skills",
-    components: {Progress}
+    components: {Progress},
+    data: () => ({
+        data: content.skills
+    })
 }
 </script>
 

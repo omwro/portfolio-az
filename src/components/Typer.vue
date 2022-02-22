@@ -1,13 +1,11 @@
 <template>
     <div class="paragraph">
-        Hello, My name is
-        <span class="gradient">Alex Zamfir</span>
-        and I am an Electronic
-        / Robotic Engineer student.
-        A 24 year old that can create a
+        {{ data.intro1 }}
+        <span class="gradient">{{ data.gradient }}</span>
+        {{ data.intro2 }}
         <vue-typer
             class="gradient"
-            :text=typerarray
+            :text=data.typer_array
             repeat='Infinity'
             :shuffle='false'
             initial-action='typing'
@@ -23,6 +21,8 @@
 </template>
 
 <script>
+import content from "../../public/data/content.json"
+
 // VUE-TYPER CUSTOMIZER DASHBOARD: https://cngu.github.io/vue-typer/
 import {VueTyper} from 'vue-typer'
 
@@ -30,7 +30,7 @@ export default {
     name: "Typer",
     components: {VueTyper},
     data: () => ({
-        typerarray: ["Robot Arms.", "Embedded Systems.", "Artificial Intelligence."]
+        data: content.home.introduction
     })
 }
 </script>

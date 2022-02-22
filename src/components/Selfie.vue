@@ -5,8 +5,13 @@
 </template>
 
 <script>
+import content from "../../public/data/content.json"
+
 export default {
-    name: "Selfie"
+    name: "Selfie",
+    data: () => ({
+        data: content.home
+    })
 }
 </script>
 

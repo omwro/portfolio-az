@@ -1,0 +1,153 @@
+{
+  "main": {
+  },
+  "navbar": {
+    "logo": "AZ",
+    "menu": [
+      {
+        "id": "#home",
+        "name": "Home"
+      },
+      {
+        "id": "#about",
+        "name": "About"
+      },
+      {
+        "id": "#services",
+        "name": "Services"
+      },
+      {
+        "id": "#portfolio",
+        "name": "Portfolio"
+      },
+      {
+        "id": "#skills",
+        "name": "Skills"
+      },
+      {
+        "id": "#contact",
+        "name": "Contact"
+      }
+    ]
+  },
+  "home": {
+    "image_path": "/img/home/selfie.jpeg",
+    "introduction": {
+      "intro1": "Hello, My name is",
+      "gradient": "Alex Zamfir",
+      "intro2": "and I am an Electronic / Robotic Engineer student. A 24 year old that can create a",
+      "typer_array": [
+        "Robot Arms.",
+        "Embedded Systems.",
+        "Artificial Intelligence."
+      ]
+    }
+  },
+  "about": {
+    "title": "About"
+  },
+  "services": {
+    "title": "Services",
+    "services": [
+      {
+        "title": "LED Light Show",
+        "description": "I can create you a custom light show with a Xmega or Arduino controller.",
+        "image_path": ""
+      },
+      {
+        "title": "Object Recognition Model",
+        "description": "I can make a custom Object Recognition model with python for your use case.",
+        "image_path": ""
+      },
+      {
+        "title": "Robot Arm",
+        "description": "I can design and produce a functional robot arm for your use case.",
+        "image_path": ""
+      },
+      {
+        "title": "Problem Solving",
+        "description": "I can think along your problem and solve it with the best solution.",
+        "image_path": ""
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "projects": [
+      {
+        "title": "Pacman",
+        "description": "Pacman AI",
+        "image_path": "/img/projects/project4.png",
+        "tags": [
+          "Pacman",
+          "AI",
+          "Machine Learning"
+        ]
+      },
+      {
+        "title": "Pacman",
+        "description": "Pacman AI",
+        "image_path": "/img/projects/project4.png",
+        "tags": [
+          "Pacman",
+          "AI",
+          "Machine Learning"
+        ]
+      },
+      {
+        "title": "Pacman",
+        "description": "Pacman AI",
+        "image_path": "/img/projects/project4.png",
+        "tags": [
+          "Pacman",
+          "AI",
+          "Machine Learning"
+        ]
+      },
+      {
+        "title": "Pacman",
+        "description": "Pacman AI",
+        "image_path": "/img/projects/project4.png",
+        "tags": [
+          "Pacman",
+          "AI",
+          "Machine Learning"
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "progress": [
+      {
+        "name": "Python",
+        "score": 100
+      },
+      {
+        "name": "Python",
+        "score": 80
+      },
+      {
+        "name": "Python",
+        "score": 60
+      },
+      {
+        "name": "Python",
+        "score": 40
+      },
+      {
+        "name": "Python",
+        "score": 20
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2022 ALEX ZAMFIR ALL RIGHTS RESERVED",
+    "made_by": "Made by",
+    "made_by_author": "Ömer Erdem",
+    "made_by_author_url": "https://omererdem.nl"
+  }
+}

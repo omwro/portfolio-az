@@ -1,34 +1,24 @@
 <template>
     <section id="services" class="max-width">
-        <h1 class="gradient">Services</h1>
+        <h1 class="gradient">{{ data.title }}</h1>
         <div class="container">
-            <div class="block">
+            <div class="block" v-for="(s, i) in data.services" :key="i">
                 <img/>
-                <h2>LED Light Show</h2>
-                <p>I can create you a custom light show with a Xmega or Arduino controller.</p>
-            </div>
-            <div class="block">
-                <img/>
-                <h2>Object Recognition Model</h2>
-                <p>I can make a custom Object Recognition model with python for your use case.</p>
-            </div>
-            <div class="block">
-                <img/>
-                <h2>Robot Arm</h2>
-                <p>I can design and produce a functional robot arm for your use case.</p>
-            </div>
-            <div class="block">
-                <img/>
-                <h2>Problem Solving</h2>
-                <p>I can think along your problem and solve it with the best solution.</p>
+                <h2>{{ s.title }}</h2>
+                <p>{{ s.description }}</p>
             </div>
         </div>
     </section>
 </template>
 
 <script>
+import content from "../../public/data/content.json"
+
 export default {
-    name: "Services"
+    name: "Services",
+    data: () => ({
+        data: content.services
+    })
 }
 </script>
 
