@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
 $background: #111215;
 $container: #141518;
 $block: #1F2023;
@@ -6,9 +8,14 @@ $secondary: rgba(255, 255, 255, 0.6);
 $gradient: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
 $gradient-reverse: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
 
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+$screen-xl: 1600px;
+
 h1 {
   margin: 0 auto 64px;
-  font-size: 48px;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -22,11 +29,15 @@ h1 {
 section {
   display: flex;
   flex-direction: column;
-  padding: 96px 16px 32px;
+  margin: 96px auto 32px;
+  padding: 0 16px;
 }
 
 .max-width {
   max-width: 1200px;
-  margin: 0 auto;
+  @media screen and (min-width:$screen-lg){
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 

@@ -22,7 +22,7 @@ export default {
 
     .name {
         margin-bottom: 16px;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     .bar {
@@ -58,8 +58,8 @@ export default {
                 right: 0;
                 padding: 8px 16px;
                 border-radius: 5px;
-                font-size: 12px;
-                font-weight: bold;
+                font-size: 0.8rem;
+                font-weight: 500;
             }
         }
     }

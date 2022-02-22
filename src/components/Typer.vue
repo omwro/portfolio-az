@@ -39,7 +39,7 @@ export default {
 @import "src/main";
 
 #home .paragraph {
-    font-size: 32px;
+    font-size: 2rem;
 
     .vue-typer {
         white-space: pre;

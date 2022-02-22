@@ -23,6 +23,7 @@ export default {
     width: 290px;
     background: $gradient-reverse;
     border-radius: 100%;
+    margin-bottom: 32px;
 
     img {
         width: 280px;

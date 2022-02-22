@@ -35,12 +35,12 @@ export default {
         padding: 32px;
 
         h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 500;
         }
 
         p {
-            font-size: 16px;
+            font-size: 1rem;
             color: $secondary;
         }
 

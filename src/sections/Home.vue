@@ -24,4 +24,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "src/main";
+
+#home {
+    // 128px is the top and bottom margin of section
+    min-height: calc(100vh - 128px);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 </style>

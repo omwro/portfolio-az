@@ -31,6 +31,7 @@ header {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     background: $container;
     z-index: 10;
     border-bottom: solid 2px $block;
@@ -53,7 +54,7 @@ header {
 
             li {
                 padding: 16px;
-                font-size: 14px;
+                font-size: 0.9rem;
 
                 a {
                     text-decoration: none;

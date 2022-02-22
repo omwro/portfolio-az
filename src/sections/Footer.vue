@@ -41,7 +41,7 @@ footer {
 
     small {
         color: $secondary;
-        font-size: 12px;
+        font-size: 0.8rem;
 
         a {
             text-decoration: none;

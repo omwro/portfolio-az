@@ -31,13 +31,13 @@ export default {
     background: $container;
 
     h2 {
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 1.2rem;
+        font-weight: 500;
         color: $primary;
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
         color: $secondary;
     }
 }

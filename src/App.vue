@@ -51,9 +51,15 @@ html {
     min-height: 100vh;
     background: $background;
     color: $primary;
+    font-size: 12px;
+
+    @media screen and (min-width:$screen-sm){
+        font-size: 16px;
+    }
 
     body {
         margin: 0;
+        font-family: 'Poppins', sans-serif;
     }
 }
 </style>
