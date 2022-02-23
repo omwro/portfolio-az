@@ -21,7 +21,7 @@
                         </div>
                         <ul class="menu-body">
                             <li v-for="(m, i) in data.menu" :key="i">
-                                <a :href="m.id">{{ m.name }}</a>
+                                <a @click="toggleMenu" :href="m.id">{{ m.name }}</a>
                             </li>
                         </ul>
                     </menu>
