@@ -1,7 +1,7 @@
 <template>
-    <section id="home" class="max-width">
-        <Selfie/>
-        <Typer/>
+    <section id="home">
+        <Selfie class="max-width"/>
+        <Typer class="max-width"/>
         <div class="gradient-circle"></div>
         <div class="gradient-circle two"></div>
     </section>
@@ -16,8 +16,8 @@ export default {
     components: {Typer, Selfie},
     data: () => ({
         replace: [
-            { from: "Vue", to: "React?" },
-            { from: "Typewriter React?", to: "Joking, it`s Vue!" },
+            {from: "Vue", to: "React?"},
+            {from: "Typewriter React?", to: "Joking, it`s Vue!"},
         ],
     }),
 
@@ -40,7 +40,7 @@ export default {
     padding-top: 96px;
     padding-bottom: 32px;
 
-     .gradient-circle {
+    .gradient-circle {
         position: absolute;
         left: -250px;
         top: 250px;
