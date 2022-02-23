@@ -30,12 +30,13 @@ section {
   display: flex;
   flex-direction: column;
   margin: 96px auto 32px;
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .max-width {
   max-width: 1200px;
-  @media screen and (min-width:$screen-lg){
+  @media screen and (min-width: $screen-lg) {
     margin-left: auto;
     margin-right: auto;
   }
