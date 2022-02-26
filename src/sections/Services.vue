@@ -3,7 +3,7 @@
         <h1 class="gradient">{{ data.title }}</h1>
         <div class="container">
             <div class="block" v-for="(s, i) in data.services" :key="i">
-                <img/>
+                <font-awesome-icon class="icon" :icon="s.icon"/>
                 <h2>{{ s.title }}</h2>
                 <p>{{ s.description }}</p>
             </div>
@@ -29,6 +29,10 @@ export default {
     margin-top: 25px;
     padding: 60px 40px;
     background: $container;
+
+    .icon {
+        font-size: 4rem;
+    }
 
     h2 {
         font-size: 1.2rem;
