@@ -63,7 +63,6 @@ export default {
 
         .maps {
             border: 0;
-            filter: grayscale(100%) invert(92%) contrast(83%);
         }
 
     }
