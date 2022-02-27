@@ -21,4 +21,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/main";
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-sm) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        > div {
+            width: calc(50% - 20px);
+        }
+    }
+}
 </style>

@@ -18,7 +18,7 @@ export default {
 @import "src/main";
 
 .progress {
-    margin-bottom: 48px;
+    margin-bottom: 64px;
 
     .name {
         margin-bottom: 16px;
@@ -44,17 +44,17 @@ export default {
                 height: 0;
                 border-left: 5px solid transparent;
                 border-right: 5px solid transparent;
-                border-top: 8px solid rgba(255, 255, 255, 0.05);
+                border-bottom: 8px solid rgba(255, 255, 255, 0.05);
                 position: absolute;
                 right: 8px;
-                bottom: 14px;
+                bottom: -12px;
             }
 
             &:after {
                 content: attr(data-value);
                 position: absolute;
                 background: $block;
-                top: -45px;
+                top: 20px;
                 right: 0;
                 padding: 8px 16px;
                 border-radius: 5px;
