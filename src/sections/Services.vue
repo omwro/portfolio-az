@@ -3,9 +3,13 @@
         <h1 class="gradient">{{ data.title }}</h1>
         <div class="container">
             <div class="block" v-for="(s, i) in data.services" :key="i">
-                <font-awesome-icon class="icon" :icon="s.icon"/>
-                <h2>{{ s.title }}</h2>
-                <p>{{ s.description }}</p>
+                <div class="icon-block">
+                    <font-awesome-icon class="icon gradient" :icon="s.icon"/>
+                </div>
+                <div class="text-block">
+                    <h2>{{ s.title }}</h2>
+                    <p>{{ s.description }}</p>
+                </div>
             </div>
         </div>
     </section>
@@ -25,24 +29,57 @@ export default {
 <style lang="scss" scoped>
 @import "src/main";
 
-.block {
-    margin-top: 25px;
-    padding: 60px 40px;
-    background: $container;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-    .icon {
-        font-size: 4rem;
-    }
+    .block {
+        margin-top: 30px;
+        padding: 60px 40px;
+        background: $container;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
 
-    h2 {
-        font-size: 1.2rem;
-        font-weight: 500;
-        color: $primary;
-    }
+        @media screen and (min-width: $screen-sm) {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: calc(50% - 110px);
+        }
 
-    p {
-        font-size: 1rem;
-        color: $secondary;
+        .icon-block {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 60px;
+            padding-right: 40px;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        .text-block {
+            align-self: center;
+        }
+
+        .icon {
+            font-size: 3rem;
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $primary;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $secondary;
+        }
     }
 }
 </style>
