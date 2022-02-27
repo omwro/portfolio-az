@@ -13,6 +13,7 @@
         <Seperator side="left"/>
         <Contact/>
         <Footer/>
+        <ScrollToTop/>
     </div>
 </template>
 
@@ -27,10 +28,12 @@ import Skills from "@/sections/Skills";
 import Footer from "@/sections/Footer";
 import Seperator from "@/components/Seperator";
 import Contact from "@/sections/Contact";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default {
     name: 'App',
     components: {
+        ScrollToTop,
         Contact,
         Seperator,
         Footer,
