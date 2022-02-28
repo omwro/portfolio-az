@@ -50,6 +50,7 @@ h2 {
         flex-direction: column;
         margin: 8px;
         text-align: center;
+        align-items: center;
 
         .hobby-icon-border {
             display: flex;
@@ -64,7 +65,7 @@ h2 {
                 display: flex;
                 width: 56px;
                 height: 56px;
-                font-size: 3rem;
+                font-size: 32px;
                 justify-content: center;
                 align-items: center;
                 background: $background;
@@ -74,6 +75,7 @@ h2 {
 
         .hobby-text {
             margin-top: 4px;
+            font-size: 12px;
         }
     }
 }

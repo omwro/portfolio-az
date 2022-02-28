@@ -33,18 +33,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "src/main";
 .scroll-to-top {
     visibility: hidden;
     opacity: 0;
     position: fixed;
     bottom: 32px;
     right: 32px;
-    padding: 11.5px 18px;
+    padding: 13.5px 18px;
     border-radius: 100%;
     border: solid 1px white;
     overflow: hidden;
     cursor: pointer;
     transition: visibility 1s, opacity 0.5s linear;
+
+    @media screen and (min-width: $screen-sm) {
+        padding: 11.5px 18px;
+    }
 
     &.visible {
         visibility: visible;
