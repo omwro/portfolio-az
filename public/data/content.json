@@ -44,7 +44,33 @@
     }
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "hobbies": [
+      {
+        "name": "Gaming",
+        "icon": "fa-solid fa-gamepad"
+      },
+      {
+        "name": "Piano",
+        "icon": "fa-solid fa-music"
+      },
+      {
+        "name": "Sporting",
+        "icon": "fa-solid fa-dumbbell"
+      },
+      {
+        "name": "Gardening",
+        "icon": "fa-solid fa-seedling"
+      },
+      {
+        "name": "Traveling",
+        "icon": "fa-solid fa-plane"
+      },
+      {
+        "name": "Learning",
+        "icon": "fa-solid fa-graduation-cap"
+      }
+    ]
   },
   "services": {
     "title": "Services",
