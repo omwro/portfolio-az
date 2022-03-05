@@ -171,12 +171,13 @@
     "title": "Contact",
     "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d430.7708783373037!2d4.786196788687458!3d52.35576614341885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e3e759c93b6b%3A0xe4467a00ce0ede8c!2sDijkgraafplein%2C%201069%20EW%20Amsterdam!5e0!3m2!1snl!2snl!4v1645880804223!5m2!1snl!2snl",
     "email": "alex@zamfir.nl",
-    "linkedin": "https://www.linkedin.com/in/alex-zamfir-25802a207/"
+    "linkedin": "https://www.linkedin.com/in/alex-zamfir-25802a207/",
+    "linkedin_text": "Alex Zamfir"
   },
   "footer": {
     "copyright": "© 2022 ALEX ZAMFIR ALL RIGHTS RESERVED",
     "made_by": "Made by",
-    "made_by_author": "Ömer Erdem",
+    "made_by_author": "Omer Erdem",
     "made_by_author_url": "https://omererdem.nl"
   }
 }

@@ -13,10 +13,20 @@
             </div>
             <div class="widgets" data-aos="fade-right">
                 <div class="widget email" @click="goToMail" data-aos="fade-right">
-                    <font-awesome-icon icon="fa-solid fa-envelope"/>
+                    <div>
+                        <font-awesome-icon icon="fa-solid fa-envelope"/>
+                    </div>
+                    <div class="widget-text">
+                        {{ data.email }}
+                    </div>
                 </div>
                 <div class="widget linkedin" @click="goToLinkedIn" data-aos="fade-right">
-                    <font-awesome-icon icon="fa-brands fa-linkedin"/>
+                    <div>
+                        <font-awesome-icon icon="fa-brands fa-linkedin"/>
+                    </div>
+                    <div class="widget-text">
+                        {{ data.linkedin_text }}
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,6 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "src/main";
+
 .container {
     display: flex;
     flex-direction: column;
@@ -74,7 +85,6 @@ export default {
 
         @media screen and (min-width: $screen-sm) {
             flex-direction: column;
-
             align-self: center;
         }
 
@@ -90,6 +100,15 @@ export default {
             border-radius: 10px;
             transition: ease-in-out 0.2s;
             cursor: pointer;
+            flex-direction: column;
+
+            .widget-text {
+                font-size: 1rem;
+
+                @media screen and (min-width: $screen-sm) {
+                    font-size: 0.8rem;
+                }
+            }
 
             &:hover {
                 width: 150px;
