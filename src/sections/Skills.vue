@@ -1,8 +1,11 @@
 <template>
     <section id="skills" class="max-width">
-        <h1 class="gradient">{{ data.title }}</h1>
+        <h1 class="gradient" data-aos="fade-right">{{ data.title }}</h1>
         <div class="container">
-            <Progress v-for="(p, i) in data.progress" :name="p.name" :progress="p.score" :key="i"/>
+            <Progress v-for="(p, i) in data.progress"
+                      :name="p.name"
+                      :progress="p.score"
+                      :key="i"/>
         </div>
     </section>
 </template>

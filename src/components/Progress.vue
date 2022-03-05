@@ -1,8 +1,12 @@
 <template>
     <div class="progress">
-        <div class="name">{{name}}</div>
-        <div class="bar">
-            <div class="inner-bar" :data-value="progress+'%'" :style="'width:'+progress+'%'"/>
+        <div class="name" data-aos="fade-right">{{name}}</div>
+        <div class="bar" data-aos="fade-right">
+            <div class="inner-bar"
+                 :data-value="progress+'%'"
+                 :style="'width:'+progress+'%'"
+                 data-aos="flip-up"
+                 data-aos-delay="1000"/>
         </div>
     </div>
 </template>

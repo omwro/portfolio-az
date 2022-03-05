@@ -17,6 +17,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
 
@@ -39,4 +41,11 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 new Vue({
     render: h => h(App),
+    mounted() {
+        AOS.init({
+            duration:1000,
+            delay:100,
+            once:true
+        })
+    }
 }).$mount('#app')

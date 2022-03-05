@@ -1,8 +1,8 @@
 <template>
     <section id="contact" class="max-width">
-        <h1 class="gradient">{{ data.title }}</h1>
+        <h1 class="gradient" data-aos="fade-right">{{ data.title }}</h1>
         <div class="container">
-            <div class="map-container">
+            <div class="map-container" data-aos="fade-right">
                 <iframe
                     :src="data.iframe"
                     width="300"
@@ -11,11 +11,11 @@
                     allowfullscreen=""
                     loading="lazy"/>
             </div>
-            <div class="widgets">
-                <div class="widget email" @click="goToMail">
+            <div class="widgets" data-aos="fade-right">
+                <div class="widget email" @click="goToMail" data-aos="fade-right">
                     <font-awesome-icon icon="fa-solid fa-envelope"/>
                 </div>
-                <div class="widget linkedin" @click="goToLinkedIn">
+                <div class="widget linkedin" @click="goToLinkedIn" data-aos="fade-right">
                     <font-awesome-icon icon="fa-brands fa-linkedin"/>
                 </div>
             </div>

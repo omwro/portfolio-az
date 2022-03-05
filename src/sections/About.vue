@@ -1,9 +1,9 @@
 <template>
     <section id="about" class="max-width">
-        <h1 class="gradient">{{ data.title }}</h1>
-        <h2 class="gradient">Hobbies</h2>
+        <h1 class="gradient" data-aos="fade-right">{{ data.title }}</h1>
+        <h2 class="gradient" data-aos="fade-left">Hobbies</h2>
         <div class="container">
-            <div class="hobby-block" v-for="(h, i) in data.hobbies" :key="i">
+            <div class="hobby-block" v-for="(h, i) in data.hobbies" :key="i"  data-aos="fade-up">
                 <div class="hobby-icon-border">
                     <div class="hobby-icon">
                         <font-awesome-icon class="icon" :icon="h.icon"/>

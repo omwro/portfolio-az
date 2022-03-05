@@ -1,8 +1,8 @@
 <template>
     <section id="portfolio" class="max-width">
-        <h1 class="gradient">{{ data.title }}</h1>
+        <h1 class="gradient" data-aos="fade-right">{{ data.title }}</h1>
         <div class="container mobile-only">
-            <div class="block" v-for="(p,i) in data.projects" :key="i">
+            <div class="block" v-for="(p,i) in data.projects" :key="i" data-aos="fade-left">
                 <h2>{{ p.title }}</h2>
                 <p>{{ p.description }}</p>
                 <img :src="p.image_path" alt="project picture"/>
@@ -14,7 +14,7 @@
         <div class="container desktop-only">
             <div class="container-left">
                 <template v-for="(p,i) in data.projects">
-                    <div class="block" v-if="i % 2 === 0" :key="i">
+                    <div class="block" v-if="i % 2 === 0" :key="i" data-aos="fade-right">
                         <h2>{{ p.title }}</h2>
                         <p>{{ p.description }}</p>
                         <img :src="p.image_path" alt="project picture"/>
@@ -26,7 +26,7 @@
             </div>
             <div class="container-right">
                 <template v-for="(p,i) in data.projects">
-                    <div class="block" v-if="i % 2 === 1" :key="i">
+                    <div class="block" v-if="i % 2 === 1" :key="i" data-aos="fade-left">
                         <h2>{{ p.title }}</h2>
                         <p>{{ p.description }}</p>
                         <img :src="p.image_path" alt="project picture"/>
@@ -57,6 +57,7 @@ export default {
 .container {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     &.mobile-only {
         @media screen and (min-width: $screen-sm) {

@@ -1,7 +1,7 @@
 <template>
     <section id="home">
-        <Selfie class="max-width"/>
-        <Typer class="max-width"/>
+        <Selfie class="max-width" data-aos="fade-up"/>
+        <Typer class="max-width" data-aos="fade-up"/>
         <div class="gradient-circle"></div>
         <div class="gradient-circle two"></div>
     </section>

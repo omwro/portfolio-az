@@ -1,8 +1,8 @@
 <template>
     <section id="services" class="max-width">
-        <h1 class="gradient">{{ data.title }}</h1>
+        <h1 class="gradient" data-aos="fade-right">{{ data.title }}</h1>
         <div class="container">
-            <div class="block" v-for="(s, i) in data.services" :key="i">
+            <div class="block" v-for="(s, i) in data.services" :key="i" data-aos="fade-up">
                 <div class="icon-block">
                     <font-awesome-icon class="icon gradient" :icon="s.icon"/>
                 </div>
