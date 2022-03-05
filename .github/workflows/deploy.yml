@@ -18,7 +18,7 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           command_timeout: 60m
           script: |
-            cd var/www/github-actions/portfolio-az
+            cd /var/www/github-actions/portfolio-az
             git pull
             npm install
             npm run build
